@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-blue: #011627;
+    --main-white: #FDFFFC;
+    --main-orange: #FF7F11;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+    background-color: var(--main-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 68px;
+}
+
+.logo h1{
+    color: var(--main-white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+}
+
+.input-text input {
+    border: var(--main-orange) 2.5px solid;
+    height: 30px;
+    padding-left: 10px;
+    background-color: #022846;
+    border-radius: 5px;
+    width: 150px;
+    color: #e4e4e4;
+}
+
+.input-text input::placeholder{
+    color: #e4e4e4;
+    
+}
