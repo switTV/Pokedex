@@ -28,7 +28,7 @@ header {
     font-size: 2.4rem;
 }
 
-.input-text input {
+.inputText input {
     border: var(--main-orange) 2.5px solid;
     height: 30px;
     padding-left: 10px;
@@ -38,7 +38,71 @@ header {
     color: #e4e4e4;
 }
 
-.input-text input::placeholder{
+.inputText input::placeholder{
     color: #e4e4e4;
     
+}
+
+.pokeContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.pokeCard {
+    width: 290px;
+    height: 190px;
+    min-width: 250px;
+    background-color: var(--main-blue);
+    position: relative;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.pokeCard .pokeBG{
+    height: 90px;
+    width: 100%;
+    background-image: url(../img/poke_background.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.pokeImg{
+    width: 85px;
+    height: 85px;
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    right: calc(50% - 40px);
+    border-radius: 50px;
+    
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-orange);
+
+    border: #ce6000 3px solid;
+}
+
+.pokeText{
+    height: 95px;
+    width: 100%;
+    color: var(--main-white);
+    margin-left: 5px;
+}
+
+.pokeText h2{
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+    margin-top: 8px;
+    font-family: Inter, sans-serif;
+}
+
+.pokeText p {
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    color: #dfdfdf;
+    margin-right: 10px;
 }
