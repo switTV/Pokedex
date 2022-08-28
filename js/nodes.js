@@ -3,6 +3,7 @@ let pokeContainer = document.getElementById("pokeContainer")
 
 let pokeBG = document.getElementById("pokeBG")
 let pokeImg = document.getElementById("pokeImg")
+let pokeLoader = document.getElementById("pokeLoader")
 let pokeText = document.querySelector("pokeText")
 let pokeName = document.getElementById("pokeName")
 let pokeMain = document.getElementById("pokeMain")

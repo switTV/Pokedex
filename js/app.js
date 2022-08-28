@@ -11,10 +11,6 @@ let limit = 386;
 
 let pokemonList = []
 
-window.addEventListener('load', function(){
-	
-})
-
 async function obtener_pokemones(id) {
 	const { data } = await api(`pokemon-species/${id}/`);
 	const poke = data.results;
@@ -31,7 +27,6 @@ const fetchPokemons = async (offset, limit) => {
 async function createPokeCard(pokemons) {
 	const { data } = await api('pokemon/');
 	const poke = data.results;
-
 
 	poke.forEach(pokemonList => {
 		let pokeCard = document.createElement("article")
@@ -60,7 +55,7 @@ async function createPokeCard(pokemons) {
 		pokeText.append(pokeName)
 		pokeText.append(pokeDescription)
 
-		pokemonList.sort()
+		pokemonList.push(pokemons)
 	});
 }
 
